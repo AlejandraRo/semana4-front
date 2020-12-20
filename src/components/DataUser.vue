@@ -199,7 +199,7 @@ import axios from 'axios';
 
     computed: {
       formTitle () {
-        return this.editedIndex === -1 ? 'Nueva categoría' : 'Editar Categoría'
+        return this.editedIndex === -1 ? 'Nuevo Usuario' : 'Editar Usuario'
       },
     },
 
@@ -218,15 +218,7 @@ import axios from 'axios';
     },
 
     methods: {
-      initialize () {
-        this.desserts = [
-          {
-            nombre: 'Frozen Yogurt',
-            descripcion: 159,
-            estado: 6.0
-          },
-        ]
-      },
+     
       list()
       {
             axios.get('http://localhost:3000/api/usuario/list',{
@@ -259,7 +251,7 @@ import axios from 'axios';
 
       deleteItemConfirm () {
        if (this.editedItem.estado===1) {
-          axios.put("http://localhost:3000/api/categoria/deactivate",{"id":this.editedItem.id,})
+          axios.put("http://localhost:3000/api/usuario/deactivate",{"id":this.editedItem.id,})
           .then(response => {
             this.list();
           })
@@ -269,7 +261,7 @@ import axios from 'axios';
           })
 
         } else {
-          axios.put("http://localhost:3000/api/categoria/activate",{"id":this.editedItem.id,})
+          axios.put("http://localhost:3000/api/usuario/activate",{"id":this.editedItem.id,})
           .then(response => {
             this.list();
           })
@@ -300,8 +292,8 @@ import axios from 'axios';
 
       save () {
         if (this.editedIndex > -1) {
-          axios.put("http://localhost:3000/api/categoria/update",{"id":this.editedItem.id,
-          "nombre":this.editedItem.name,"descripcion":this.editedItem.descripcion})
+          axios.put("http://localhost:3000/api/usuario/update",{"id":this.editedItem.id,
+          "nombre":this.editedItem.name})
           .then(response => {
             this.list();
           })
@@ -311,8 +303,8 @@ import axios from 'axios';
           })
 
         } else {
-          axios.post("http://localhost:3000/api/categoria/add",{
-          "nombre":this.editedItem.name,"descripcion":this.editedItem.descripcion,
+          axios.post("http://localhost:3000/api/usuario/add",{
+          "nombre":this.editedItem.name,"correo":this.editedItem.email,
           "estado":1})
           .then(response => {
             this.list();
