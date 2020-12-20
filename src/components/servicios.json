@@ -1,0 +1,23 @@
+[
+    {
+        "codigo":1,
+        "nombre":"Conciertos",
+        "descripcion": "Gestionamos conciertos de música tropical y música clásica para celebrar inauguraciones, aniversarios o cualquier otra fecha especial de la empresa con músicos y dispositivos de la mejor calidad",
+        "image":"https://www.elespectador.com/resizer/LLpfXnM5mAdqwJ7YkfjdUcSLwEs=/657x0/cloudfront-us-east-1.images.arcpublishing.com/elespectador/ULSO6VOKTZCDFNFIBNNEHIDHFA.jpg"
+
+    },
+    {
+        "codigo":2,
+        "nombre":"Conferencias",
+        "descripcion": "Realizamos conferencias de cualquier tipo manejando un gran número de invitados, además contamos con los dispositivos más actualizados para la transmisión y grabación del evento",
+        "image":"https://www.infobae.com/new-resizer/BekJsuDUOUE75J2BoCkYFy1XNmc=/420x280/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/X4ZNEWMFRBC23IAZK4WJVD3NAA.jpeg"
+
+    },
+    {
+        "codigo":3,
+        "nombre":"Eventos Deportivos",
+        "descripcion": "Somos especialistas en la preparación y ejecución de eventos como carreras de ciclismo o campeonatos de fútbol, realizamos cubrimiento a nivel nacional para llevar el evento a todo el país y contamos con los mejores profesionales",
+        "image":"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAF6yZK.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1383&y=861"
+
+    }
+]
